@@ -8,7 +8,7 @@ export const HomePage = ({
 }) => {
   const [actualPage, setActualPage] = useState(0);
 
-  const indexEntries = (_entries) => {
+  const indexEntries = (_entries : ICharacter[]) => {
     const entries = structuredClone(_entries);
     const pages = [];
     while (entries.length > 0) {
