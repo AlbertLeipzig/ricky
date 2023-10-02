@@ -6,7 +6,7 @@ export const HomePage = ({
 }: {
   characterData: ICharacter[];
 }) => {
-  const [actualPage, setActualPage] = useState(1);
+  const [actualPage, setActualPage] = useState(0);
 
   const indexEntries = (_entries) => {
     const entries = structuredClone(_entries);
